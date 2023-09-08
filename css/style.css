@@ -1,0 +1,351 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.desktop__nav {
+    display: none;
+}
+
+
+/* Header */
+
+.header__container {
+    width: 350px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[alt="logo"], .logo {
+    height: 30px;
+}
+
+
+/* Información principal */
+.top__container {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+img[alt="intro"] {
+    width: 101%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+h1 {
+    color: #232C50;
+    text-align: right;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    /* 57.3px */
+    letter-spacing: -1.75px;
+    padding: 1rem 0;
+}
+
+.top__container p {
+    color: #000;
+    text-align: right;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 157.1%;
+}
+
+.mobile__button {
+    display: flex;
+    height: 2rem;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #8B48BF;
+    color: #FFF;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.top__container a {
+    width: 9rem;
+    margin-bottom: 40px;
+}
+
+/* Contenedor azul */
+
+.blue-top__container {
+    background-color: #3CDDF3;
+    padding: 50px 20px;
+}
+
+.blue-top__container h2 {
+    color: #FFF;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114.6%;
+    /* 41.256px */
+    margin-bottom: 70px;
+}
+
+.blue-top__container p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+    /* 24.176px */
+}
+
+
+/* Cards numeradas */
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 4.5rem;
+    height: 2.7rem;
+    background: #8B48BF;
+    color: #FFF;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 4rem 0;
+}
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 450px;
+}
+
+.card__container h3 {
+    color: #323851;
+    font-size: 16px;
+    font-style: normal;
+    width: 100%;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    background: rgba(139, 72, 191, 0.30);
+    border-radius: 30px 0 0 30px;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    width: 450px;
+}
+
+.card__container p {
+    width: 400px;
+    color: #B3B2B7;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156.6%;
+    /* 25.523px */
+    letter-spacing: -0.163px;
+    padding: 40px 10px;
+}
+
+.best-player__container {
+    width: 440px;
+}
+
+.best-player__container h2 {
+    color: #242E53;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 156.6%;
+    /* 61.41px */
+    letter-spacing: -0.392px;
+    text-align: center;
+}
+
+.sanyo,
+.navarro {
+    display: none;
+}
+
+.card-player__container {
+    background: #FAFAFA;
+    text-align: center;
+    position: relative;
+    margin-top: 7rem;
+    padding: 70px 22px 40px;
+}
+
+.card-player__container img {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.card-player__container h3 {
+    color: #3F4868;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 156.6%;
+    /* 25.168px */
+    letter-spacing: -0.161px;
+    margin-bottom: 10px;
+}
+
+.card-player__container p {
+    color: #B9B9C1;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156.6%;
+    /* 25.056px */
+}
+
+.best-player__container a {
+    margin: 3rem auto;
+    width: 8rem;
+}
+
+/* Contenedor azul abajo */
+
+.blue-bottom__container {
+    background-color: #3CDDF3;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.blue-bottom__container h2 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 114.6%;
+    /* 41.256px */
+    text-align: center;
+}
+
+.blue-bottom__container a {
+    margin: 4rem auto 0;
+    width: 8rem;
+    background: #232C50;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Footer */
+footer {
+    background: #1E1E26;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding: 10px 0;
+}
+
+/* Form footer */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 290px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.submit {
+    width: 5rem;
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+/* Enlaces footer */
+.links {
+    margin: 0 auto;
+}
+
+.links:nth-child(1) {
+    /* background-color: #3CDDF3; */
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.links li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 25px;
+    font-weight: 200;
+}
+
+
+/* Parte final footer */
+
+.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final svg {
+    margin: 25px 0;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer p {
+    color: #8C8C94;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2.5rem;
+}
