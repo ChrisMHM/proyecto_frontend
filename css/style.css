@@ -76,6 +76,10 @@ h1 {
     line-height: 157.1%;
 }
 
+.p__desktop {
+    display: none;
+}
+
 .mobile__button {
     display: flex;
     height: 3rem;
@@ -419,9 +423,16 @@ footer p {
         font-size: 14px;
     }
 
+    main {
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 100%;
+    }
+    
+    /* Contenedor superior */
     .top__container {
-        background-color: brown;
-        min-width: 1000px;
+        min-width: 80vw;
+        justify-content: space-between;
     }
 
     .top__container img {
@@ -431,6 +442,71 @@ footer p {
     .h1__container {
         max-width: 450px;
     }
+
+    /* Contenedor azul arriba */
+    .blue-top__container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .purple__container {
+        /* max-width: 80%; */
+        width: 75vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .purple__container p {
+        width: 450px;
+    }
+
+    .purple__container .h2__desktop {
+        text-align: left;
+        margin: 0;
+    }
+
+    .p__mobile {
+        display: none;
+    }
+
+    .p__desktop {
+        display: block;
+    }
+
+    /* Cards info */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: #FAFAFA;
+        margin: 0;
+        padding: 40px;
+    }
+
+    .card__container {
+        margin: 24px 2rem;
+    }
+    
+    .h3__container {
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+        left: -5rem;
+    }
+
+    .card__container p {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .card__container h3 {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    /* Cards jugadores */
 
     .sanyo,
     .navarro {
@@ -447,13 +523,13 @@ footer p {
         /* 41.256px */
         text-align: center;
     }
-    
+
     .h2__mobile {
         display: none;
     }
 
     /* Contenedor azul abajo */
-    .blue-bottom__container {
+    .blue-bottom__container, .blue-top__container {
         background: #8B48BF;
         display: flex;
         justify-content: center;
@@ -461,11 +537,8 @@ footer p {
         padding-right: 0;
     }
 
-    .purple__container {
+    .blue-bottom__container .purple__container {
         width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .blue-bottom__container h2 {
