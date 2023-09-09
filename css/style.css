@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
     box-sizing: border-box;
@@ -217,6 +217,7 @@ span {
     position: relative;
     margin-top: 7rem;
     padding: 70px 22px 40px;
+    width: 440px;
 }
 
 .card-player__container img {
@@ -428,7 +429,7 @@ footer p {
         margin: 0;
         min-width: 100%;
     }
-    
+
     /* Contenedor superior */
     .top__container {
         min-width: 80vw;
@@ -487,7 +488,7 @@ footer p {
     .card__container {
         margin: 24px 2rem;
     }
-    
+
     .h3__container {
         position: relative;
     }
@@ -528,8 +529,27 @@ footer p {
         display: none;
     }
 
+    .best-player__container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        margin: 6rem 0 10rem 0;
+    }
+
+    .cards__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1320px;
+        border: none;
+    }
+
     /* Contenedor azul abajo */
-    .blue-bottom__container, .blue-top__container {
+    .blue-bottom__container,
+    .blue-top__container {
         background: #8B48BF;
         display: flex;
         justify-content: center;
