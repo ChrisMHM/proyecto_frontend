@@ -2,6 +2,9 @@
     /* border: 1px solid black; */
     margin: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -83,8 +86,8 @@ h1 {
     color: #FFF;
     font-style: normal;
     line-height: normal;
-    text-decoration: none;
     margin: 1rem 0;
+    border: none;
 }
 
 .top__container a {
@@ -175,6 +178,8 @@ span {
     padding: 40px 10px;
 }
 
+/* Seccion mejor jugador */
+
 .best-player__container {
     width: 440px;
 }
@@ -243,7 +248,7 @@ span {
     width: 100%;
 }
 
-.blue-bottom__container h2 {
+.h2__mobile {
     color: #FFF;
     font-size: 2.5rem;
     font-style: normal;
@@ -251,6 +256,10 @@ span {
     line-height: 114.6%;
     /* 41.256px */
     text-align: center;
+}
+
+.h2__desktop {
+    display: none;
 }
 
 .blue-bottom__container a {
@@ -268,7 +277,6 @@ footer {
 }
 
 ul {
-    list-style: none;
     padding-left: 0;
 }
 
@@ -292,8 +300,9 @@ ul {
 input[type="text"] {
     padding: 10px;
     width: 290px;
-    height: 20px;
+    height: 40px;
     border-radius: 20px;
+    border: none;
 }
 
 .submit {
@@ -337,7 +346,6 @@ input[type="text"] {
 }
 
 footer a {
-    text-decoration: none;
     color: #FFF;
 }
 
@@ -348,4 +356,30 @@ footer p {
     font-weight: 500;
     line-height: normal;
     margin-bottom: 2.5rem;
+}
+
+/* Código para desktop */
+@media (min-width: 1440px) {
+    .desktop__nav {
+        display: block;
+    }
+
+    .sanyo, .navarro {
+        display: block;
+    }
+
+    .h2__desktop {
+        display: block;
+        color: #FFF;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 114.6%;
+        /* 41.256px */
+        text-align: center;
+    }
+    
+    .h2__mobile {
+        display: none;
+    }
 }
